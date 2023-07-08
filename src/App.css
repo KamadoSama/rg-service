@@ -27,12 +27,69 @@
 .App-link {
   color: #61dafb;
 }
+.mynavbar{
+  border: 1px solid transparent;
+  border-radius: 50px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.mynavbar a{
+  /* width: 25%; */
+  padding: 4px 10px;
+  color: #0573bd;
+  transition: all 0.6s ease-in-out;
+}
+.mynavbar a:hover{
+  color: #fff;
+  background-color: #0573bd;
+  opacity: 1;
+}
+.a-w{
+  width: 25%;
+}
+.dropdown{
+  width: 25%;
+}
+.navbar-custom{
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+.active{
+  color: #fff;
+  background-color: #0573bd;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.carousel-image-wrapper {
+  position: relative;
+}
+
+.carousel-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de superposition sombre */
+}
+
+@media (max-width: 768px) {
+  .mynavbar{
+    border-radius: 0px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .mynavbar a{
+    border-radius: 0 !important;
+    
+  }
+  #navbarScrollingDropdown{
+    width: 100% !important;
+  }
+  .a-w{
+    width: 100% !important ;
   }
 }
