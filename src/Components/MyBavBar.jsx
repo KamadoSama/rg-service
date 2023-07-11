@@ -5,11 +5,24 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import logo from "../assets/logo.png"
-
+import { useState, useEffect } from 'react';
 export const MyNavBar =()=> {
+  const [scrolled , setScrolled] = useState(false)
+  useEffect(()=>{
+    const onScroll = () =>{
+      if(window.scrollY > 20 ){
+        
+        setScrolled(true)
+      }else{
+        setScrolled(false)
+      }
+    }
+    window.addEventListener("scroll", onScroll)
+    return ()=>window.addEventListener("scroll",onScroll)
+  },[])
   return (
     
-  <Navbar expand="md" className=" fixed-top navbar-custom">
+  <Navbar expand="md" className={scrolled ? " fixed-top navbar-custom animate__animated animate__fadeIn" :"navbar-custom"}>
       <Container fluid>
         <Navbar.Brand href="#"><img src={logo}   width="80" height="80" className="d-inline-block align-top" alt='logo' /> </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -26,7 +39,7 @@ export const MyNavBar =()=> {
           
               <NavDropdown.Item href="#action5"  >Location / Vente</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action2" className='a-w'  >A propos</Nav.Link>
+            <Nav.Link href="#apropos" className='a-w'  >A propos</Nav.Link>
           
             <Nav.Link href="#" className='a-w' style={{borderRadius:'0px 20px 20px 0px'}}>
               Contact
@@ -39,7 +52,7 @@ export const MyNavBar =()=> {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-primary">Rechercher</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
