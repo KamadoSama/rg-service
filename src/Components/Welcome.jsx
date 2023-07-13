@@ -1,10 +1,18 @@
 import { Container ,Row } from "react-bootstrap"
-import TrackVisibility from 'react-on-screen';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 
 export const Welcome = () =>{
-   
+    useEffect(() => {
+        AOS.init({
+          duration: 1900, 
+          easing: 'ease', 
+          once: true 
+        });
+      }, []);
     
    
     const styleh2 = {
@@ -19,28 +27,15 @@ export const Welcome = () =>{
         lineHeight: 'normal'
     }
     return(
-        <Container fluid className="text-center mt-5 mb-5 ">
+        <Container data-aos="fade-right" fluid className="text-center mt-5 mb-5 ">
              
-           <TrackVisibility once>
-              
-                {
-                    ({isVisible}) =>(
-                        
-                        <div className={isVisible ? " animate__animated  animate__slideInLeft" : ""}>
-                             
-                            <Row className="justify-content-center">
-                                <h2 style={styleh2}>BIENVENUE</h2>
-                                <div className=" w-25" style={{height:'1px ',background: '#D9D9D9'}}></div>
-                            </Row>
-                            <Row>
-                                <p style={styleh3}>Ut officia veniam pariatur Lorem amet pariatur ipsum tempor ut anim. Sunt pariatur minim velit cupidatat.</p>
-                            </Row>
-                        </div>
-                        
-                    )
-                }
-                
-           </TrackVisibility>
+            <Row className="justify-content-center">
+                    <h2 style={styleh2}>BIENVENUE</h2>
+                    <div className=" w-25" style={{height:'1px ',background: '#D9D9D9'}}></div>
+            </Row>
+            <Row>
+                <p style={styleh3}>Ut officia veniam pariatur Lorem amet pariatur ipsum tempor ut anim. Sunt pariatur minim velit cupidatat.</p>
+            </Row>
            
         </Container>
     )

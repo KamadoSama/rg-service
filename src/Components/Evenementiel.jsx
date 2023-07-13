@@ -21,6 +21,13 @@ export const Evenementiel =  () =>{
             prix: "270.000",
             description: packContent,
             color: "#0573bd"
+        },
+        {
+            title: "Pack essential",
+            image: pack_essential,
+            prix: "270.000",
+            description: packContent,
+            color: "#1E3240"
         }
     ]
     const styleh3 ={

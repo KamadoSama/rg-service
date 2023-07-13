@@ -11,13 +11,22 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../ALaUne.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 // import required modules
 import { EffectCards } from 'swiper/modules';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export const  AlaUne = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1900, 
+      easing: 'ease', 
+      once: true 
+    });
+  }, []);
     const styleh2 = {
         color:'#787575',
         fontWeight:'700'
@@ -29,7 +38,7 @@ export const  AlaUne = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-        <Container  fluid className=' aLaUne text-center'>
+        <Container data-aos="fade-left" fluid className=' aLaUne text-center'>
             <Row className="justify-content-center mb-2">
                 <h3 style={styleh2} >À la une</h3>
                 <div className=" w-25" style={{height:'1px ',background: '#D9D9D9'}}></div>

@@ -13,7 +13,7 @@ function App() {
   return (
     <Router >
       <MyNavBar />
-      <Routes>
+      <Routes >
         <Route path='/' element={<Accueil />} />
         <Route path='/evenementiel' element ={<Evenementiel />} /> 
         {/* <Route path='/service' element ={<Contact />} */}
