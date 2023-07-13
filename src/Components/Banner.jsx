@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import carousel1 from '../assets/carrousel/carousel1.jpg'
-import carousel2 from '../assets/carrousel/carousel2.png'
 import carousel3 from '../assets/carrousel/carousel3.png'
-import voiture1 from '../assets/carrousel/voiture1.png'
 import '../carousel.css'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';

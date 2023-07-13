@@ -2,7 +2,7 @@
 import './App.css';
 import { MyNavBar } from './Components/MyBavBar';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
+import { Evenementiel } from './Components/Evenementiel';
 // import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -15,7 +15,7 @@ function App() {
       <MyNavBar />
       <Routes>
         <Route path='/' element={<Accueil />} />
-        {/* <Route path='/service' element ={<Service />} */}
+        <Route path='/evenementiel' element ={<Evenementiel />} /> 
         {/* <Route path='/service' element ={<Contact />} */}
         {/* <Route path='/service' element ={<Service />} */}
       </Routes>

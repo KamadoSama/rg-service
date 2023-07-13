@@ -1,0 +1,49 @@
+.pack_container, .pack_container div{
+    border-radius: 40px;
+}
+.pack_container{
+    width: 80% !important;
+}
+.au_dessus{
+    position: absolute;
+    width: 88%;
+    height: 70%;
+    z-index: 2;
+    right: 0%;
+    /* bottom: 5px; */
+    top: 15%;
+    background-color: black;
+}
+.pack_container{
+    height: 370px;
+    background-color: #0573bd;
+}
+.img-contain{
+    position: relative;
+}
+.en_dessous{
+    width: 88%;
+    height: 70%;
+    background-color: #fff;
+    /* z-index: 1; */
+    position: absolute;
+}
+.info-contain p{
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+.price {font-size: 13px !important; }
+
+.pack_container svg ellipse{
+    stroke: #0573bd;
+}
+.pack_container svg ellipse{
+    transition: all 0.5s ease-in-out;
+  }
+  .pack_container  svg:hover ellipse{
+    fill: #fff;
+  }
+  .pack_container  svg:hover path{
+    
+    fill: rgb(5, 115, 189);
+  }

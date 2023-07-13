@@ -1,8 +1,6 @@
 import React from 'react';
 import logo_fg_white from "../assets/logo_fg_white.jpeg"
-import facebook from "../assets/facebook.svg"
-import instagram from "../assets/instagram.svg"
-import whatsapp from "../assets/whatsapp.svg"
+
 
 import { Container,Row, Col } from 'react-bootstrap';
 

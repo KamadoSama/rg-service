@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 html {
@@ -41,8 +45,12 @@ body {
   background-color: rgba(255, 255, 255, 0.8) !important;
 }
 .active{
-  color: #fff;
-  background-color: #0573bd;
+  color: #fff !important;
+  background-color: #0573bd !important;
+}
+.active #navbarScrollingDropdown{
+  color: #fff !important;
+  background-color: #0573bd !important;
 }
 .search-icon {
   position: absolute;
@@ -64,22 +72,38 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Couleur de superposition sombre */
 }
 .apropos{
-  width: 1440px;
-height: 610px;
-flex-shrink: 0;
+  /* width: 1440px; */
+height: 500px;
+border-radius: 0px !important ;
 background: #BDBFC1;
+}
+.nosService{
+  height: 500px;
+flex-shrink: 0;
+
 }
 .apropos p{
   color: #787575;
 font-family: Inter;
-font-size: 24px;
+font-size: 18px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
 }
-.apropos button{
+.nosService p{
+  color: #787575;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.apropos, .nosService  button{
   width: 206px;
   padding: 10px;
+  border-radius: 10px;
+}
+.apropos img, .nosService  img{
   border-radius: 10px;
 }
 .footer-contain{
@@ -91,15 +115,7 @@ line-height: normal;
   width: 40px;
  
 }
-.footer-social-icon svg ellipse{
-  transition: all 0.5s ease-in-out;
-}
-.footer-social-icon  svg:hover ellipse{
-  fill: rgb(5, 115, 189);
-}
-.footer-social-icon  svg:hover path{
-  fill: #fff;
-}
+
 .footer-social-icon{
 width:162px;}
 .footer-section h3{
@@ -135,6 +151,11 @@ line-height: normal;
   color: #FFF;
   font-size: 12px;
 }
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("./assets/carrousel/banner__service.png");
+  background-size: cover;
+}
+
 /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; */
 @media (max-width: 768px) {
   .mynavbar{
@@ -151,7 +172,12 @@ line-height: normal;
     width: 100% !important ;
   }
   .apropos{
-    height: 1022px;
+    height: 753px;
+  }
+  .nosService{
+    margin-top: 36%;
+  }
+  .aLaUne{    margin-top:36% !important;
   }
   .footer-contain{
     height: 949px;
@@ -166,5 +192,8 @@ line-height: normal;
   .footer-section li {
     
     margin-top: 9px;
+}
+.dropdown{
+  width: 100% !important;
 }
 }
