@@ -29,11 +29,15 @@
     position: absolute;
 }
 .info-contain p{
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 1px;
 }
 .price {font-size: 13px !important; }
 
+.pack_container svg{
+    width:65px;
+    height: 65px;
+}
 .pack_container svg ellipse{
     stroke: #0573bd;
 }
@@ -49,5 +53,15 @@
   }
 @media (max-width: 768px) {
  .pack_container { height: 794px; }
-
+ .content-card{
+    height: 50%;
+  }
+  .pack_container svg{
+    width:65px;
+    height: 65px;
+}
+.info-contain{
+    width: 100% !important;
+    height: 80% !important;
+}
 }

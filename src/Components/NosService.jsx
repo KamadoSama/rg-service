@@ -27,7 +27,7 @@ export const NosService = () =>{
                             <p>
                                 Que vous planifiez un mariage, que vous ayez besoin d'une assistance informatique ou que vous souhaitiez louer du matériel pour votre événement, notre équipe dévouée est là pour vous fournir des solutions adaptées à vos besoins. Contactez-nous dès aujourd'hui pour discuter de la manière dont nous pouvons vous aider à réaliser vos projets avec succès.
                             </p>
-                        <Button variant="primary" className='mt-2' >En savoir plus</Button>
+                        <Button variant="primary" href='/evenementiel' className='mt-2' >En savoir plus</Button>
                         
                         </Col>
                     

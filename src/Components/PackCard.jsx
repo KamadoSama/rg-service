@@ -21,7 +21,7 @@ export const PackCard = ({title,image,prix,description,color}) =>{
     return(
         <Container className="pack_container mb-5" style={packColor}>
         <Row data-aos="fade-left" md={2} xs={1} className="h-100">
-          <Col className="text-center position-relative">
+          <Col className="text-center position-relative content-card">
             <h5 style={{ position: 'absolute', right: '50%', color: '#fff', top: '4%' }}>{title}</h5>
             <div className="img-contain d-flex justify-content-center align-items-end p-4 h-100">
               <div data-aos="fade-left" className="en_dessous"></div>
@@ -30,7 +30,7 @@ export const PackCard = ({title,image,prix,description,color}) =>{
               </div>
             </div>
           </Col>
-          <Col className="d-flex justify-content-center align-items-center">
+          <Col className="d-flex justify-content-center content-card align-items-center">
             <div  className="info-contain p-1 text-center" style={{ height: '70%', width: "88%", backgroundColor: "#fff" }}>
               <p>{description}</p>
               <p className="price">Prix : {prix} FCFA</p>
@@ -40,7 +40,7 @@ export const PackCard = ({title,image,prix,description,color}) =>{
                 <div className="d-flex flex-row-reverse " style={{paddingRight:'4%'}} >
                     <div>
                     <a href="">
-                        <svg width="65" height="65" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg  viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="whatsapp">
                             <ellipse id="Ellipse 24" cx="18.5" cy="19.6646" rx="17.9945" ry="19.6646" fill="#0573bd"/>
                             <g id="&#240;&#159;&#166;&#134; icon &#34;What&#39;s App&#34;">
