@@ -15,7 +15,7 @@ function App() {
       <MyNavBar />
       <Routes >
         <Route path='/' element={<Accueil />} />
-        <Route path='/evenementiel' element ={<Evenementiel />} /> 
+        <Route path='https://rgservice.onrender.com/evenementiel' element ={<Evenementiel />} /> 
         {/* <Route path='/service' element ={<Contact />} */}
         {/* <Route path='/service' element ={<Service />} */}
       </Routes>
