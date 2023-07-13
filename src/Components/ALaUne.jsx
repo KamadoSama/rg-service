@@ -40,7 +40,7 @@ export const  AlaUne = () => {
   return (
         <Container data-aos="fade-left" fluid className=' aLaUne text-center'>
             <Row className="justify-content-center mb-2">
-                <h3 style={styleh2} >Nos dernières réalisation</h3>
+                <h3 style={styleh2} >Nos dernières réalisations</h3>
                 <div className=" w-25" style={{height:'1px ',background: '#D9D9D9'}}></div>
             </Row>
             <Swiper
