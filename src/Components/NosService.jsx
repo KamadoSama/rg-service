@@ -1,16 +1,20 @@
 import nosService from '../assets/nosService.png'
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import { Container , Row , Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 export const NosService = () =>{
+    useEffect(() => {
+        AOS.init({
+          duration: 1900, 
+          easing: 'ease', 
+          once: true 
+        });
+      }, []);
     return(
-        <TrackVisibility partialVisibility once >
-        {
-            ({isVisible}) =>(
-                <Container fluid className='p-1  nosService  d-flex align-items-center'  id="apropos" >
-                    <div className={isVisible ? "animate__animated animate__bounceInRight animate__delay-1s" : "" }>
-                    <Row   md={2} xs={1}>
+        <Container fluid className='p-1  nosService  d-flex align-items-center'  id="apropos" >
+             <Row data-aos="fade-right"  md={2} xs={1}>
                         <Col className="col-md-6">
                             <img src={nosService} alt="Services" className="img-fluid" />
                         </Col>
@@ -27,12 +31,7 @@ export const NosService = () =>{
                         
                         </Col>
                     
-                    </Row>
-                    </div>
-                </Container >
-            )
-        }
-       
-   </TrackVisibility>
+                    </Row>       
+        </Container >
     )
 } 

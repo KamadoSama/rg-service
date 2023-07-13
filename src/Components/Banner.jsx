@@ -28,7 +28,7 @@ export const Banner =() => {
           <Carousel.Caption > 
            <TrackVisibility>
             {
-              (isVisible)=> (
+              ({isVisible})=> (
                 <div className={ isVisible ? "animate__animated animate__slideInLeft  " : ""}>
                 <h3>First slide label</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

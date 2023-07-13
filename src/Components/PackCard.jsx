@@ -1,22 +1,37 @@
 import { Container,Row, Col } from "react-bootstrap"
 import "../packCard.css"
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 // import pack_essentiel from "../assets/pack_essential.png"
 
 export const PackCard = ({title,image,prix,description,color}) =>{
+    useEffect(() => {
+        AOS.init({
+          duration: 1900, // Durée de l'animation en millisecondes
+          easing: 'ease', // Type de transition d'animation
+          once: true // Permet d'animer les éléments uniquement la première fois qu'ils deviennent visibles
+        });
+      }, []);
+      
+    const packColor = {
+        backgroundColor:`${color}`
+    }
     return(
-        <Container className="pack_container" style={{color:{color}}}>
-        <Row md={2} xs={1} className="h-100">
+        <Container className="pack_container mb-5" style={packColor}>
+        <Row data-aos="fade-left" md={2} xs={1} className="h-100">
           <Col className="text-center position-relative">
             <h5 style={{ position: 'absolute', right: '50%', color: '#fff', top: '4%' }}>{title}</h5>
             <div className="img-contain d-flex justify-content-center align-items-end p-4 h-100">
-              <div className="en_dessous"></div>
-              <div className="au_dessus">
+              <div data-aos="fade-left" className="en_dessous"></div>
+              <div data-aos="fade-left" className="au_dessus">
                 <img style={{ borderRadius: "40px" }} src={image} alt="pack essential" height="100%" width="100%" />
               </div>
             </div>
           </Col>
-          <Col className="img-contain d-flex justify-content-center align-items-center">
-            <div className="info-contain p-1 text-center" style={{ height: '70%', width: "88%", backgroundColor: "#fff" }}>
+          <Col className="d-flex justify-content-center align-items-center">
+            <div  className="info-contain p-1 text-center" style={{ height: '70%', width: "88%", backgroundColor: "#fff" }}>
               <p>{description}</p>
               <p className="price">Prix : {prix} FCFA</p>
                 <p>Contactez-nous pour en savoir plus.

@@ -16,7 +16,7 @@
 }
 .pack_container{
     height: 370px;
-    background-color: #0573bd;
+    
 }
 .img-contain{
     position: relative;
@@ -47,3 +47,7 @@
     
     fill: rgb(5, 115, 189);
   }
+@media (max-width: 768px) {
+ .pack_container { height: 794px; }
+
+}
