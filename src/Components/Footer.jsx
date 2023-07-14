@@ -47,8 +47,8 @@ export const Footer = () => {
             <h3>LIENS UTILES</h3>
               <ul>
                 <li><a href="/">Accueil</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/a-propos">À Propos</a></li>
+                <li><a href="/evenementiel">Services</a></li>
+                <li><a href="/#apropos">À Propos</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
         
@@ -73,7 +73,7 @@ export const Footer = () => {
       <div  style={{height:'1px ',background: '#D9D9D9', width:'80%'}}></div>
       <div className=' justify-content-center d-flex justify-content-between' style={{ width:'80%'}} >
         <span>© 2023 RgService. All Rights Reserved.</span>
-        <span> &lt; write with ❤️ by  @KamadoSama / &gt;</span>
+        <span> &lt; Dévéloppé par <a href="https://www.linkedin.com/in/gnomblehi-ben-arthur-taho-5a05121a3/">@KamadoSama</a>  / &gt;</span>
       </div>
       </Row>
     </Container>

@@ -147,9 +147,20 @@ font-style: normal;
 font-weight: 300;
 line-height: normal;
 }
-.footer-section span{
+.footer-section span , .footer-section span a{
   color: #FFF;
   font-size: 12px;
+}
+.footer-contain svg ellipse{
+  transition: all 0.5s ease-in-out;
+}
+.footer-contain  svg:hover ellipse{
+  fill: rgb(5, 115, 189);
+  
+}
+.footer-contain  svg:hover path{
+  
+  fill: #fff;
 }
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("./assets/carrousel/banner__service.png");
