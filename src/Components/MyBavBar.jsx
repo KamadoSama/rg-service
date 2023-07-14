@@ -63,7 +63,7 @@ export const MyNavBar =()=> {
             </NavDropdown>
             <Nav.Link href="/#apropos" className={active=== "apropos" ?  "a-w active" : "a-w" } onClick={()=>{onActive("apropos")}}  >A propos</Nav.Link>
           
-            <Nav.Link href="#" className={active === "contact" ? 'a-w active' : 'a-w'}  onClick={()=>{onActive("contact")}} style={{borderRadius:'0px 20px 20px 0px'}}>
+            <Nav.Link href="/contact" className={active === "contact" ? 'a-w active' : 'a-w'}  onClick={()=>{onActive("contact")}} style={{borderRadius:'0px 20px 20px 0px'}}>
               Contact
             </Nav.Link>
           </Nav>

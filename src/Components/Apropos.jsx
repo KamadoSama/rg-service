@@ -14,8 +14,8 @@ export const Apropos = ()=> {
     });
   }, []);
   return (
-    <Container fluid className='apropos p-1 d-flex align-items-center'  id="apropos" >
-       <Row data-aos="fade-left" className="p-3" md={2} xs={1} >
+    <Container fluid className='apropos p-1 d-flex align-items-center justify-content-center'  id="apropos" >
+       <Row data-aos="fade-left" className="p-3" style={{width:"80%"}} md={2} xs={1} >
         <Col>
           <h2 className='mb-2 ' >A propos </h2>
             <p>
@@ -33,7 +33,7 @@ export const Apropos = ()=> {
             </Col>
             
               <Col className='mt-2'>
-                  <img src={carousel4}   className="img-fluid"/>
+                  <img src={carousel4}  alt='à propos'  className="img-fluid"/>
               </Col>
           </Row>
     </Container>

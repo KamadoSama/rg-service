@@ -13,8 +13,8 @@ export const NosService = () =>{
         });
       }, []);
     return(
-        <Container fluid className='p-1  nosService  d-flex align-items-center'  id="apropos" >
-             <Row data-aos="fade-right"  md={2} xs={1}>
+        <Container fluid className='p-1  nosService  d-flex align-items-center justify-content-center'  id="apropos" >
+             <Row data-aos="fade-right" style={{width:"90%"}} md={2} xs={1}>
                         <Col className="col-md-6">
                             <img src={nosService} alt="Services" className="img-fluid" />
                         </Col>

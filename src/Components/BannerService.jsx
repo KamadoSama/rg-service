@@ -1,10 +1,14 @@
 import { Container,Row, } from "react-bootstrap"
 
 
-export const BannerService = () =>{
+export const BannerService = ({title , height}) =>{
+    const style ={
+        height:`${height}px`
+    }
     return(
-        <Container fluid  style={{height:'400px'}} className="banner text-center align-items-center justify-content-center d-flex">
-            <h2 style={{color:"#fff"}} >Organisation de mariage</h2>
+        <Container fluid  style={style} className="banner text-center align-items-center justify-content-center d-flex">
+            <h2 style={{color:"#fff"}} >{title}</h2>
         </Container>
     )
 }
+

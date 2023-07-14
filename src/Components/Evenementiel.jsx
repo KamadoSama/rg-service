@@ -9,7 +9,7 @@ export const Evenementiel =  () =>{
     
     return (
         <>
-        <BannerService />
+        <BannerService height={400} title={"Organisation de mariage"} />
         <WelcomeService />
         <PackCards />
         </>
