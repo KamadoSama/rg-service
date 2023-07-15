@@ -30,8 +30,9 @@ export const MyNavBar =()=> {
 
   useEffect(()=>{
     const storedActive =  sessionStorage.getItem('active')
-    console.log(storedActive)
-    if (storedActive == null) {
+    
+    if ( !storedActive ) {
+      // console.log('yo')
       setActive("accueil")
       
     }else{
@@ -42,6 +43,13 @@ export const MyNavBar =()=> {
   const onActive = (value) =>{  
     setActive(value)
   }
+  useEffect(()=>{
+    if (active != `${document.title}`){
+      setActive(`${document.title}`)
+    }
+
+  }, [])
+  
   return (
     
   <Navbar expand="md" className={scrolled ? " fixed-top navbar-custom animate__animated animate__fadeIn" :"navbar-custom"}>

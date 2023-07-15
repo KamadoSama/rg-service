@@ -4,7 +4,7 @@ import { WelcomeService } from "./WelcomeService"
 import { useEffect } from "react"
 export const Evenementiel =  () =>{
     useEffect(()=>{
-        document.title = "evenementiel"
+        document.title = "service"
     },[])
     
     return (

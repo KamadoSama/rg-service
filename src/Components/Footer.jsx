@@ -12,7 +12,7 @@ export const Footer = () => {
           <img src={logo_fg_white}   width="162px" height="118px" className="d-inline-block align-top mb-5" alt='logo' />
           <div className='footer-social-icon d-flex mt-5 justify-content-center'>
             
-            <a href="">
+            <a target="_blank"  rel="noreferrer" href="https://www.facebook.com/profile.php?id=100090473206020">
               <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="facebook">
               <ellipse id="Ellipse 23" cx="17.9945" cy="19.9268" rx="17.9945" ry="19.9268" fill="white"/>
@@ -22,7 +22,7 @@ export const Footer = () => {
               </g>
               </svg>
             </a>
-            <a href="">
+            <a target="_blank"  rel="noreferrer" href="https://api.whatsapp.com/send/?phone=2250747424406">
               <svg width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="whatsapp">
                   <ellipse id="Ellipse 24" cx="18.5" cy="19.6646" rx="17.9945" ry="19.6646" fill="white"/>
@@ -32,7 +32,7 @@ export const Footer = () => {
                 </g>
               </svg>
             </a>
-            <a href=""><svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a target="_blank"  rel="noreferrer" href="https://www.facebook.com/profile.php?id=100090473206020"><svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="instagram">
             <ellipse id="Ellipse 25" cx="18.0055" cy="20.0732" rx="17.9945" ry="19.9268" fill="white"/>
             <g id="&#240;&#159;&#166;&#134; icon &#34;Instagram Square&#34;">
@@ -61,11 +61,11 @@ export const Footer = () => {
           </p>
           <p>
            <strong>Telephone</strong> <br />
-          <a href="tel: +225 07 87 16 06 92">+225 07 87 16 06 92</a>
+          <a href="tel: +225 07 87 16 06 92">+225 07 47 42 44 06</a>
           </p>
           <p>
            <strong>Email</strong> <br />
-            tahoarthur@gmail.com
+            <a target="_blank"  rel="noreferrer"  href="mailto:tahoarthur52@gmail.com">tahoarthur52@gmail.com</a>
           </p>
         </Col> 
       </Row>

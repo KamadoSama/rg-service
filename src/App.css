@@ -197,6 +197,7 @@ line-height: normal;
 @media (max-width: 768px) {
   .mynavbar{
     border-radius: 0px !important;
+    max-height: 139px !important;
   }
   .mynavbar a{
     border-radius: 0 !important;
