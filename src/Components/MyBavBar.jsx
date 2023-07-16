@@ -54,7 +54,7 @@ export const MyNavBar =()=> {
     
   <Navbar expand="md" className={scrolled ? " fixed-top navbar-custom animate__animated animate__fadeIn" :"navbar-custom"}>
       <Container fluid>
-        <Navbar.Brand href="#"><img src={logo}   width="80" height="80" className="d-inline-block align-top" alt='logo' /> </Navbar.Brand>
+        <Navbar.Brand href="#"> <a href="/"><img src={logo}   width="80" height="80" className="d-inline-block align-top" alt='logo' /></a> </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
