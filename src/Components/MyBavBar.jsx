@@ -65,9 +65,9 @@ export const MyNavBar =()=> {
             <Nav.Link href="/" className={active === 'accueil' ? 'a-w active' : 'a-w'} style={{borderRadius: '20px 0px 0px 20px'}} onClick={()=>onActive("accueil")} >Accueil</Nav.Link>
             <NavDropdown title="Service" className={active==='service' ? 'active' : ''} onClick={()=>{onActive("service")}} id="navbarScrollingDropdown">
               <NavDropdown.Item  href="/evenementiel"  onClick={()=>{onActive("service")}}>Evenementiel</NavDropdown.Item>
-              <NavDropdown.Item href="#action4"  onClick={()=>{onActive("service")}}> Informatique</NavDropdown.Item>
+              <NavDropdown.Item href="/informatique"  onClick={()=>{onActive("service")}}> Informatique</NavDropdown.Item>
           
-              <NavDropdown.Item href="#action5"  onClick={()=>{onActive("service")}}  >Location / Vente</NavDropdown.Item>
+              <NavDropdown.Item href="/location"  onClick={()=>{onActive("service")}}  >Location / Vente</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/#apropos" className={active=== "apropos" ?  "a-w active" : "a-w" } onClick={()=>{onActive("apropos")}}  >A propos</Nav.Link>
           

@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Footer } from './Components/Footer';
 import { Accueil } from './Components/Accueil';
 import { Contact } from './Components/Contact';
-
+import { Informatique } from './Components/Informatique';
 function App() {
   return (
     <Router >
@@ -18,7 +18,8 @@ function App() {
         <Route path='/' element={<Accueil />} />
         <Route path='/evenementiel' element ={<Evenementiel />} /> 
         <Route path='/contact' element ={<Contact  /> } /> 
-        {/* <Route path='/service' element ={<Service />} /> */}
+        <Route path='/informatique' element ={<Informatique />} />
+        <Route path='/location' element ={<Informatique />} />
       </Routes>
       <Footer />
     </Router>

@@ -13,14 +13,14 @@ export const PackCards = () =>{
       
     const allPack = [
         {
-            title: "Pack essential",
+            title: "Pack essentiel",
             image: pack_essential,
             prix: "270.000",
             description: packContent,
             color: "#0573bd"
         },
         {
-            title: "Pack essential",
+            title: "Pack essentiel",
             image: pack_essential,
             prix: "270.000",
             description: packContent,

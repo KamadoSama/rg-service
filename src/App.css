@@ -193,6 +193,44 @@ line-height: normal;
 .contact-contain a{
   margin: auto;
 }
+/* svg#freepik_stories_maintenance:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories_maintenance.animated #freepik--Gear--inject-15 {
+  animation: 6s Infinite linear spin;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories_maintenance.animated #freepik--Character--inject-15 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+.svg-container svg {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
 /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; */
 @media (max-width: 768px) {
   .mynavbar{

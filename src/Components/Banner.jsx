@@ -30,7 +30,7 @@ export const Banner =() => {
             {
               ({isVisible})=> (
                 <div className={ isVisible ? "animate__animated animate__slideInLeft  " : ""}>
-                <h3>First slide label</h3>
+                <h3>Organisation de mariage</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               )
@@ -77,7 +77,7 @@ export const Banner =() => {
             {
               (isVisible)=> (
                 <div className={ isVisible ? "animate__animated animate__slideInLeft  " : ""}>
-                <h3>Third slide label</h3>
+                <h3>Troisième</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               )

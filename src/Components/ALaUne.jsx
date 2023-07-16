@@ -38,7 +38,7 @@ export const  AlaUne = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-        <Container data-aos="fade-left" fluid className=' aLaUne text-center'>
+        <Container data-aos="fade-left" fluid className='mb-5 aLaUne text-center'>
             <Row className="justify-content-center mb-2">
                 <h3 style={styleh2} >Nos dernières réalisations</h3>
                 <div className=" w-25" style={{height:'1px ',background: '#D9D9D9'}}></div>

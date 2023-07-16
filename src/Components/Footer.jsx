@@ -6,7 +6,7 @@ import { Container,Row, Col } from 'react-bootstrap';
 
 export const Footer = () => {
   return (
-    <Container fluid className='p-2 mt-5 footer-contain'  >
+    <Container fluid className='p-2  footer-contain'  >
       <Row className='p-5' style={{height:'80%'}} md={3} xs={1} >
         <Col>
           <img src={logo_fg_white}   width="162px" height="118px" className="d-inline-block align-top mb-5" alt='logo' />
