@@ -2,20 +2,19 @@ import { Banner } from "./Banner";
 import { Apropos } from "./Apropos";
 import { Welcome } from "./Welcome";
 import { AlaUne } from "./ALaUne";
-import { useEffect } from "react";
+
 
 import { NosService } from "./NosService";
 
 export const Accueil = () =>{
-    useEffect(()=>{
-        document.title = "accueil"
-    },[])
+   
     return(
         <>
             <Banner />
             <Welcome />
-            <Apropos />
             <NosService />
+            <Apropos />
+            
                 
                 
                 

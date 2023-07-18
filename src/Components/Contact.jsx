@@ -11,9 +11,7 @@ export const Contact = () =>{
           once: true 
         });
       }, []);
-    useEffect(()=>{
-        document.title = "contact"
-    },[])
+
     return(
     
         <>

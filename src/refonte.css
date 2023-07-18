@@ -1,0 +1,202 @@
+ .home-banner .picture-right {
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  @media (max-width: 991.98px) {
+     .home-banner .picture-right {
+      height: auto;
+      left: 0;
+      opacity: 0.4;
+      width: 100%;
+    }
+  }
+   .home-banner .container {
+    z-index: 10;
+  }
+   .home-banner .container .content {
+    max-width: 40vw;
+  }
+  @media (max-width: 991.98px) {
+     .home-banner .container .content {
+      max-width: unset;
+    }
+  }
+   .home-banner .container .content h1 {
+    color: #fff;
+    font-size: 35px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+   .home-banner .container .content h1 span {
+    color: #00b5ff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  @media (max-width: 767.98px) {
+     .home-banner .container .content h1 {
+      font-size: 20px !important;
+    }
+     .home-banner .container .content h1 span {
+      font-size: 17px !important;
+    }
+     .home-banner .container .content p {
+      font-size: 14px !important;
+    }
+  }
+   .home-banner .container .content p {
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+  }
+   .home-banner .container .content .btn-action {
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding: 5px 25px;
+  }
+  #teaser-banner {
+    background-color: #ededed;
+  }
+   .benefits-section {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  @media (max-width: 767.98px) {
+     .benefits-section {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+   .benefits-section img {
+    cursor: pointer;
+    width: auto;
+  }
+   .benefits-section .service-name {
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  .subtitle-subline {
+    border-bottom: 2px solid #00b5ff;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: left !important;
+    width: 50px;
+  }
+  .title-subline {
+    border-bottom: 2px solid #0573bd;
+    border-top: 0;
+    margin-left: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 50px;
+  }
+   .about-us-section {
+    background: #ededed;
+    padding: 115px 0;
+  }
+  @media (max-width: 767.98px) {
+     .about-us-section {
+      padding: 55px 0;
+    }
+  }
+   .about-us-section img {
+    width: 400px;
+  }
+  @media (max-width: 767.98px) {
+     .about-us-section img {
+      width: 250px;
+    }
+  }
+   .about-us-section h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+  }
+   .about-us-section p {
+    color: #4d4d4d;
+    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+   .about-us-section .btn-action {
+    border-radius: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 7px 25px;
+    text-transform: uppercase;
+  }
+  
+#footer {
+    padding-bottom: 0 !important;
+    padding-top: 60px !important;
+  }
+  #footer .column .h3 {
+    color: #161b40;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+  }
+  #footer .column div i {
+    color: #0573bd;
+    margin-right: 15px;
+  }
+  #footer .column div span {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  #footer .column a {
+    color: #161b40;
+    text-decoration: none;
+    transition: all 0.6s ease-in-out;
+  }
+  #footer .column a:hover {
+    color: #161b40;
+    text-decoration: underline;
+  }
+  #footer .column .social-icons {
+    font-size: 20px;
+  }
+  #footer .column .social-icons a:hover {
+    text-decoration: none;
+  }
+  #footer .column .social-icons a:hover i {
+    color: #161b40;
+  }
+  #footer .title-subline {
+    border-bottom: 2px solid #0573bd;
+    border-top: 0;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+    width: 50px;
+  }
+  #footer .column .social-icons a i.bigger {
+    font-size: 23px !important;
+    margin-top: 0.25rem;
+  }
+  #footer .copyright {
+    background-color: #161b40;
+    color: #fff;
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    margin-top: 85px !important;
+    padding: 20px;
+  }
+  #footer .copyright span {
+    color: #00b5ff
+  }
+  @media (max-width: 767.98px) {
+    #footer .copyright {
+      font-size: 0.8rem;
+    }
+  }

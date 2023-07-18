@@ -31,12 +31,7 @@ export const  AlaUne = () => {
         color:'#787575',
         fontWeight:'700'
     }
-   const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
+   
   return (
         <Container data-aos="fade-left" fluid className='mb-5 aLaUne text-center'>
             <Row className="justify-content-center mb-2">
@@ -45,7 +40,10 @@ export const  AlaUne = () => {
             </Row>
             <Swiper
        spaceBetween={100}
-       
+       autoplay={{
+        delay: 10000,
+        disableOnInteraction: false,
+      }}
         pagination={{
           clickable: true,
         }}
@@ -54,7 +52,7 @@ export const  AlaUne = () => {
         grabCursor={true}
         modules={[EffectCards, Autoplay, Pagination, Navigation]}
         className="mySwiper"
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
+       
       >
         <SwiperSlide>
             <video className="img-fluid" controls >
@@ -70,12 +68,7 @@ export const  AlaUne = () => {
         />
       </video></SwiperSlide>
        
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
+        
       </Swiper>
 
         </Container>

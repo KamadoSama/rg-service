@@ -14,29 +14,45 @@ export const Apropos = ()=> {
     });
   }, []);
   return (
-    <Container fluid className='apropos p-1 d-flex align-items-center justify-content-center'  id="apropos" >
-       <Row data-aos="fade-left" className="p-3" style={{width:"80%"}} md={2} xs={1} >
-        <Col>
-          <h2 className='mb-2 ' >A propos </h2>
-            <p>
+    <div data-aos="fade-left" className="about-us-section">
+              <div className="container">
+                <div className="row">
+                  <div
+                    className="col-md-6 text-center text-lg-left d-flex align-items-center"
+                  >
+                    <div className="content">
+                      <h2 className="title mb-3">Qui sommes-nous ?</h2>
+                      <div className="mb-3 mb-lg-5">
+                        <p>
                         Chez RGService, notre passion est de créer des  
                         expériences uniques et de fournir des services 
-                        de qualité inégalée. Fondée par Marius Flan, 
-                        notre entreprise est spécialisée dans 
-                        l'organisation d'événements de mariage, la 
+                        de qualité inégalée. Découvrez l'équipe  qui vous accompagne au
+                        quotidien dans l'organisation d'événements de mariage, la 
                         location de véhicules de mariage et les services 
-                        informatiques. Forts de notre expérience de 5 années 
-                        dans l'industrie, nous sommes engagés à satisfaire 
-                        nos clients et à surpasser leurs attentes.
-                    </p>
-                    <Button variant="primary" href="/contact" className='mt-2' >Contactez-nous</Button>
-            </Col>
-            
-              <Col className='mt-2'>
-                  <img src={carousel4}  alt='à propos'  className="img-fluid"/>
-              </Col>
-          </Row>
-    </Container>
+                        informatiques.
+                        </p>
+                      </div>
+                      <a href="">
+                        <button
+                          className="btn btn-primary btn-md btn-action mb-3"
+                          title="En savoir +"
+                        >
+                          En savoir +
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col-md-6 text-center text-lg-right">
+                    <img
+                      src={carousel4}
+                      className="w-75"
+                      alt="A propos de nous"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+    
   );
 }
 

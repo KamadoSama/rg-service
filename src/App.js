@@ -1,5 +1,6 @@
 
 import './App.css';
+import "./refonte.css"
 import { MyNavBar } from './Components/MyBavBar';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { Evenementiel } from './Components/Evenementiel';
